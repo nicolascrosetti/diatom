@@ -1,0 +1,59 @@
+@import url('../dist/fonts.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-font{
+    font-family: 'Bebas Neue';
+}
+
+.secondary-font{
+    font-family: "Inter";
+}
+
+.bg-main-color{
+    background-color: #3CB371;
+}
+.main-color{
+    color: #3CB371;
+}
+.hover\:main-color:hover {
+    --tw-text-opacity: 1;
+    color: rgb(60 179 113 / var(--tw-text-opacity));
+}
+
+
+.bg-secondary-color{
+    background-color: #109972;
+}
+.secondary-color{
+    color: #109972;
+}
+.hover\:secondary-color:hover {
+    --tw-text-opacity: 1;
+    color: rgb(16 153 114 / var(--tw-text-opacity));
+}
+
+
+.third-color{
+    color: #703CB3;
+}
+.hover\:third-color:hover {
+    --tw-text-opacity: 1;
+    color: rgb(112 60 179 / var(--tw-text-opacity));
+}
+
+
+.fourth-color{
+    color: #B3413C;
+}
+.hover\:fourth-color:hover {
+    --tw-text-opacity: 1;
+    color: rgb(179 65 60 / var(--tw-text-opacity));
+}
+
+
+.bg-secondary-white{
+    background-color: #F2F2F2;
+}
