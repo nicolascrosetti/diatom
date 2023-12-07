@@ -1,3 +1,5 @@
+AOS.init();
+
 //navbar links scroll and carrousel init
 window.onload = function() {
     new Glide('.glide', {
@@ -27,4 +29,37 @@ window.onload = function() {
         }
       });
     }
-  };
+};
+
+//#region navbar
+const navbar = document.getElementById('navbar');
+const navlogo = document.getElementById('navlogo');
+const navbarText = document.querySelector('#navbar ul');
+const scrollPosition = () => window.scrollY;
+
+const navbarSmall = () => {
+  navlogo.classList.add("h-[50px]");
+  navlogo.classList.remove("h-[75px]");
+
+  navbarText.classList.add("text-2xl");
+  navbarText.classList.remove("text-4xl");
+}
+
+const navbarNormal = () => {
+  navlogo.classList.add("h-[75px]");
+  navlogo.classList.remove("h-[50px]");
+
+  navbarText.classList.remove("text-2xl");
+  navbarText.classList.add("text-4xl");
+}
+
+const handleScroll = () => {
+  if (scrollPosition() > 0) {
+    navbarSmall();
+  } else {
+    navbarNormal();
+  }
+};
+
+window.addEventListener('scroll', handleScroll);
+//#endregion

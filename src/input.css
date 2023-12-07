@@ -60,3 +60,7 @@
 .text-shadow {
     text-shadow: 0 2px 4px var(--tw-shadow-color);
 }
+
+#navlogo, #navbar ul {
+    transition: height 0.3s ease, font-size 0.3s ease;
+  }
