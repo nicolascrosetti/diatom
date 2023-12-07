@@ -63,3 +63,58 @@ const handleScroll = () => {
 
 window.addEventListener('scroll', handleScroll);
 //#endregion
+
+//#region mobile navbar
+
+//mobile navbar
+const mobileNavButton = document.getElementById('mobile-nav-button');
+const navbarMobile = document.getElementById('navbar-mobile');
+const drawerNav = document.getElementById('drawer-nav');
+const drawerItems = document.querySelectorAll('.drawer-item');
+const closeDrawer = document.getElementById('close-drawer');
+
+const hideNavbarMobile = () => {
+  navbarMobile.classList.add('opacity-0');
+  navbarMobile.classList.remove('z-40');
+  navbarMobile.classList.add('-z-50');
+}
+
+const showNavbarMobile = () => {
+  navbarMobile.classList.remove('opacity-0');
+  navbarMobile.classList.add('z-40');
+  navbarMobile.classList.remove('-z-50');
+}
+
+const showDrawer = () => {
+  drawerNav.classList.remove('opacity-0');
+  drawerNav.classList.add('z-50');
+  drawerNav.classList.remove('-z-50');
+  setTimeout(() => {
+    drawerNav.style.transform = 'translateX(0)';
+  }, 50);
+}
+
+const hideDrawer = () => {
+  setTimeout(() => {
+    drawerNav.style.transform = 'translateX(-100%)';
+  }, 50);
+  drawerNav.classList.add('opacity-0');
+  drawerNav.classList.remove('z-50');
+  drawerNav.classList.add('-z-50');
+}
+
+mobileNavButton.addEventListener('click', () => {
+  showDrawer();
+  hideNavbarMobile();
+});
+closeDrawer.addEventListener('click', () => {
+  hideDrawer();
+  showNavbarMobile();
+});
+drawerItems.forEach((item) => {
+  item.addEventListener('click', () => {
+    hideDrawer();
+    showNavbarMobile();
+  })
+});
+//#endregion
