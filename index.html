@@ -56,15 +56,16 @@
     <header>
         <section id="header" class="min-h-screen flex relative text-shadow shadow-gray-500">
           <!-- Background -->
-          <img id="background-image" class="absolute w-full h-full -z-40 object-cover md:object-fill object-center transition-opacity duration-1000" src="img/diatom.png" >
+          <img id="background-image" class="hidden md:flex absolute w-full h-full -z-40 object-cover md:object-fill object-center transition-opacity duration-1000" src="img/diatom.png" >
+          <img id="background-image-mobile" class="md:hidden bg-cover absolute w-full h-full -z-40 object-cover md:object-fill object-center transition-opacity duration-1000" src="img/diatommobile.png" >
           <!-- Overlay -->
           <div class="absolute w-full h-full -z-10 bg-black bg-opacity-10"></div>
 
           <!-- Grid system -->
-          <div class="flex flex-col w-2/5">
+          <div class="hidden md:flex flex-col w-2/5">
             <div class="flex h-1/4"></div>
             <div class="flex h-1/3 pl-32">
-                <div class="max-w-6xl flex flex-col gap-5 justify-center items-center">
+                <div class="max-w-6xl md:flex flex-col gap-5 justify-center items-center">
                     <h1 class="main-font text-8xl text-white text-center text-shadow shadow-black" >DIATOM</h1>
                     <p class="text-2xl xl:text-3xl 2xl:text-4xl text-white font-semibold text-center">
                       Control de Plagas y Limpieza de Tanques de Agua
@@ -75,15 +76,24 @@
             <div class="flex h-"></div>
             <div class="flex h-1/4"></div>
           </div>
-          <div class="flex flex-col w-1/3"></div>
-          <div class="flex flex-col w-1/3"></div>        
+          <div class="hidden md:flex flex-col w-1/3"></div>
+          <div class="hidden md:flex flex-col w-1/3"></div>        
+
+           <!-- Mobile -->
+          <div class="md:hidden max-w-6xl flex flex-col gap-5 justify-center items-center">
+            <h1 class="main-font text-8xl text-white text-center text-shadow shadow-black" >DIATOM</h1>
+            <p class="text-2xl xl:text-3xl 2xl:text-4xl text-white font-semibold text-center">
+              Control de Plagas y Limpieza de Tanques de Agua
+            </p>
+            <button class="bg-main-color text-white font-bold py-2 px-4 rounded text-xl shadow-md shadow-black hover:transform hover:scale-125 transition duration-500"><a href="#contacto">Contactar</a></button>                      
+        </div>
         </section>
     </header>
     <!-- Main -->
     <main>
-        <section id="quienessomos" class="w-full flex justify-center items-center py-24 relative bg-[url('img/quienessomos.png')] bg-cover bg-center bg-no-repeat h-[577px]">
-            <div class="text-black text-2xl md:text-3xl flex flex-col gap-4 p-8 items-center w-2/5 z-20 ease-linear" data-aos="fade-down" data-aos-duration="2000">        
-              <h4 class="main-font main-color text-6xl">
+        <section id="quienessomos" class="w-full flex justify-center items-center py-24 relative  bg-[url('img/quienessomosmobile.png')] md:bg-[url('img/quienessomos.png')] bg-cover bg-center bg-no-repeat h-[577px]">
+            <div class="text-black flex flex-col gap-4 p-8 items-center md:w-2/5 z-20 ease-linear" data-aos="fade-down" data-aos-duration="2000">        
+              <h4 class="main-font main-color text-4xl md:text-6xl">
                 ¿Quiénes somos?
               </h4>
               <p class="font-semibold text-lg xl:text-xl 2xl:text-2xl text-center">
@@ -93,15 +103,15 @@
             </div>
         </section>
         <section id="divisiones" class="w-full flex flex-col items-center justify-around py-24 relative bg-secondary-white min-h-screen">       
-            <h4 class="main-font secondary-color text-6xl" data-aos="fade-in">
+            <h4 class="main-font secondary-color text-4xl md:text-6xl" data-aos="fade-in">
               Divisiones
             </h4>
-            <div class="flex w-3/5">
+            <div class="flex flex-col md:flex-row md:w-3/5 gap-5 md:gap-0">
               <!-- División Fumigación -->
-              <div class="bg-main-color text-white p-4 h-72 w-1/2 flex flex-col justify-center items-center gap-1 relative" data-aos="fade-right" data-aos-duration="2000">
-                <img src="img/fumigacion.png" class="absolute -bottom-full left-1/2 transform -translate-x-1/2" alt="Limpieza de tanques">
-                <h2 class="main-font text-4xl">DIVISIÓN FUMIGACIÓN</h2>
-                <p class="secondary-font font-semibold text-xl">
+              <div class="bg-main-color text-white p-4 h-72 md:w-1/2 flex flex-col justify-center items-center gap-1 relative" data-aos="fade-right" data-aos-duration="2000">
+                <img src="img/fumigacion.png" class="hidden md:block absolute -bottom-full left-1/2 transform -translate-x-1/2" alt="Limpieza de tanques">
+                <h2 class="main-font text-2xl md:text-4xl">DIVISIÓN FUMIGACIÓN</h2>
+                <p class="secondary-font font-semibold md:text-xl">
                   Somos una empresa habilitada en el ámbito de la Ciudad de Buenos Aires (APRA), y Provincia de Buenos Aires (Secretaría de Agricultura, Ganadería y Pesca) para realizar trabajos de control de plagas
                   urbanas, desinsectación, desratización, desinfección, con tratamientos profesionales, con resultados eficientes.
                   Los productos que utilizamos están habilitados por el ANMAT-INAL
@@ -109,12 +119,12 @@
               </div>
             
               <!-- División Limpieza de Tanques de Agua -->
-              <div class="flex flex-col w-1/2" data-aos="fade-left" data-aos-duration="2000">
-                <div class="h-36"></div>
+              <div class="flex flex-col md:w-1/2" data-aos="fade-left" data-aos-duration="2000">
+                <div class="hidden md:flex h-36"></div>
                 <div class="bg-secondary-color h-72 text-white p-4 flex flex-col justify-center items-center gap-1 relative">
-                  <img src="img/tanques.png" class="absolute -top-full left-1/2 transform -translate-x-1/2" alt="Limpieza de tanques">
-                  <h2 class="main-font text-4xl">DIVISIÓN LIMPIEZA DE TANQUES DE AGUA</h2>
-                  <p class="secondary-font font-semibold text-xl">
+                  <img src="img/tanques.png" class="hidden md:block absolute -top-full left-1/2 transform -translate-x-1/2" alt="Limpieza de tanques">
+                  <h2 class="main-font text-2xl md:text-4xl">DIVISIÓN LIMPIEZA DE TANQUES DE AGUA</h2>
+                  <p class="secondary-font font-semibold md:text-xl">
                     Realizamos servicios de limpieza y desinfección de tanques de agua potable, análisis bacteriológicos y fisicoquímicos. 
                     Presentamos informes donde se detallan las posibles reparaciones, cambios de marcos y tapas, para el excelente funcionamiento de las instalaciones.
                   </p>
@@ -123,15 +133,15 @@
             </div>
         </section>
         <section id="servicios" class="w-full flex flex-col items-center justify-around py-24 relative bg-white gap-20">       
-          <h4 class="main-font third-color text-6xl">
+          <h4 class="main-font third-color text-4xl md:text-6xl">
             Nuestros Servicios
           </h4>
-          <div class="flex w-4/6 gap-10 h-[400px]">
+          <div class="flex flex-col md:flex-row w-4/5 md:w-4/6 gap-10 md:h-[400px]">
             <!-- División Fumigación -->
             <div class="bg-secondary-white text-black flex-1 flex flex-col justify-center items-center shadow-lg shadow-gray-500 relative" data-aos="fade-up" data-aos-duration="2000">
-              <img src="img/smoke-left.png" class="absolute -left-32 top-0 w-32" alt="humo">
+              <img src="img/smoke-left.png" class="absolute md:-left-32 top-0 md:w-32 w-10 -left-10 h-full" alt="humo">
               <img src="img/servicios-fumigacion.png" class="w-full h-2/5 bg-cover"></img>
-              <ul class="bg-secondary-white w-full h-3/5 main-font  md:text-2xl 2xl:text-3xl flex flex-col justify-center p-5 gap-1">
+              <ul class="bg-secondary-white w-full h-3/5 main-font  text-2xl 2xl:text-3xl flex flex-col justify-center p-5 gap-1">
                 <li><span class="third-color">Control</span> de Plagas Urbanas</li>
                 <li><span class="main-color">Desinfección</span></li>
                 <li><span class="third-color">Desratización</span></li>
@@ -141,10 +151,10 @@
           
             <!-- División Fumigación -->
             <div class="bg-secondary-white text-black flex-1 flex flex-col justify-center items-center relative shadow-lg shadow-gray-500" data-aos="fade-up" data-aos-duration="2000">
-              <img src="img/water-right.png" class="absolute -right-32 top-0 w-32" alt="humo">
-              <img src="img/water-bottom.png" class="absolute -bottom-32 w-3/4 h-32" alt="Limpieza de tanques">
+              <img src="img/water-right.png" class="absolute md:-right-32 top-0 md:w-32 w-10 -right-10 h-full" alt="humo">
+              <img src="img/water-bottom.png" class="absolute md:-bottom-32 -bottom-20 w-3/4 h-20 md:h-32" alt="Limpieza de tanques">
               <img src="img/servicios-tanques.png" class="w-full h-2/5 bg-cover"></img>
-              <ul class="bg-secondary-white w-full h-3/5 main-font md:text-2xl 2xl:text-3xl flex flex-col justify-center p-5 gap-1">
+              <ul class="bg-secondary-white w-full h-3/5 main-font text-2xl 2xl:text-3xl flex flex-col justify-center p-5 gap-1">
                 <li><span class="third-color">limpieza</span> de tanques de agua potable</li>
                 <li><span class="main-color">desinfección</span> de tanques de agua potable</li>
                 <li><span class="third-color">Análisis</span> bacteriológicos</li>
@@ -152,14 +162,15 @@
                 <li><span class="third-color">informes</span></li>
               </ul>
             </div>
+          </div>
         </section>
-        <section id="habilitaciones" class="w-full flex flex-col items-center justify-around relative bg-secondary-white gap-20">       
+        <section id="habilitaciones" class="w-full flex flex-col items-center justify-around relative bg-secondary-white gap-20 py-10 md:py-0">       
           <div class="flex w-11/12">
-            <div class="w-3/5 flex flex-col gap-5 justify-center items-center" data-aos="fade-in" data-aos-duration="2000">
-              <h4 class="main-font secondary-color text-6xl">
+            <div class="md:w-3/5 flex flex-col gap-5 justify-center items-center" data-aos="fade-in" data-aos-duration="2000">
+              <h4 class="main-font secondary-color text-4xl md:text-6xl">
                 Habilitaciones
               </h4>
-              <ul class="secondary-font font-semibold text-2xl flex flex-col gap-5 w-3/4">
+              <ul class="secondary-font font-semibold text-xl md:text-2xl flex flex-col gap-5 md:w-3/4">
                 <li>
                 Nuestra empresa está habilitada para brindar servicios de control de plagas urbanas por el gobierno de la <span class="secondary-color">Ciudad de Buenos Aires</span>: en la Dirección General de Control Ambiental.
                 </li>
@@ -174,7 +185,7 @@
                 </li>
               </ul>
             </div>
-            <div class="w-2/5 relative" data-aos="fade-down" data-aos-duration="2000">
+            <div class="hidden md:flex w-2/5 relative" data-aos="fade-down" data-aos-duration="2000">
               <img src="img/carnet.png" alt="habilitaciones" class="top-0 left-0">
             </div>
           </div>
@@ -208,7 +219,7 @@
         </div>
         </section>
         <section id="contacto" class="w-full flex flex-col items-center justify-around relative bg-white"> 
-          <ul class="py-14 w-1/4 flex flex-col text-center justify-center main-font text-4xl gap-10" data-aos="fade-in" data-aos-duration="2000">
+          <ul class="py-14 w-2/4 md:w-1/4 flex flex-col text-center justify-center main-font text-2xl md:text-4xl gap-10" data-aos="fade-in" data-aos-duration="2000">
             <li class="flex flex-col justify-center items-center gap-2">
               <img src="img/ubicacion.png">
               <h5 class="secondary-color">Ubicación</h5>
@@ -227,9 +238,9 @@
           <img class="absolute w-full h-full -z-50 object-cover object-center" src="img/form.jpg" >
           <div class="absolute w-full h-full -z-20 bg-black opacity-30"></div>
 
-          <form id="form" action="" class="w-full md:w-3/4 lg:w-1/2 2xl:w-2/5 px-8 flex flex-col font-bold text-base gap-5 bg-secondary-white py-11 md:py-14 md:px-28 shadow-black shadow-lg relative rounded-md">
+          <form id="form" action="" class="w-full md:w-3/4 lg:w-1/2 2xl:w-2/5 px-8 flex flex-col font-bold text-base gap-5 bg-secondary-white py-11 md:py-14 md:px-28 md:shadow-black md:shadow-lg relative md:rounded-md">
             <div class="flex justify-center text-center">
-              <h4 class="main-font text-xl md:text-2xl xl:text-7xl font-normal">Diatom</h4>
+              <h4 class="main-font text-4xl xl:text-7xl font-normal">Diatom</h4>
             </div>
             <div class="flex flex-col">
               <label for="from_name">
@@ -281,7 +292,7 @@
         </p>
       </div>
       <div class="flex flex-col items-center md:justify-center">
-        <p class="text-center main-font text-5xl">DIATOM</p>
+        <p class="text-center main-font text-4xl md:text-5xl">DIATOM</p>
       </div>
       <div class="flex flex-col items-center text-lg">
         <p>Sargento Díaz 2340</p>
