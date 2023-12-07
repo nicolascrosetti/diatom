@@ -1,11 +1,16 @@
 @font-face {
     font-family: 'Bebas Neue';
-    src: url('font/BebasNeue-Regular.woff2') format('woff2'),
-        url('font/BebasNeue-Regular.woff') format('woff');
+    src: url('fonts/BebasNeue-Regular.eot');
+    src: url('fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BebasNeue-Regular.woff2') format('woff2'),
+        url('fonts/BebasNeue-Regular.woff') format('woff'),
+        url('fonts/BebasNeue-Regular.ttf') format('truetype'),
+        url('fonts/BebasNeue-Regular.svg#BebasNeue-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
+
 
 @font-face {
     font-family: 'Inter';
