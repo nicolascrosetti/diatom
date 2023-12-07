@@ -23,7 +23,6 @@
     color: rgb(60 179 113 / var(--tw-text-opacity));
 }
 
-
 .bg-secondary-color{
     background-color: #109972;
 }
@@ -35,7 +34,6 @@
     color: rgb(16 153 114 / var(--tw-text-opacity));
 }
 
-
 .third-color{
     color: #703CB3;
 }
@@ -43,7 +41,6 @@
     --tw-text-opacity: 1;
     color: rgb(112 60 179 / var(--tw-text-opacity));
 }
-
 
 .fourth-color{
     color: #B3413C;
@@ -53,7 +50,13 @@
     color: rgb(179 65 60 / var(--tw-text-opacity));
 }
 
-
 .bg-secondary-white{
     background-color: #F2F2F2;
+}
+.secondary-white-color{
+    color: #F2F2F2;
+}
+
+.text-shadow {
+    text-shadow: 0 2px 4px var(--tw-shadow-color);
 }
