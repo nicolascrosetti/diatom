@@ -6,37 +6,289 @@
     <title>Diatom</title>
     <link rel="stylesheet" href="output.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
 </head>
 <body>
+    <!-- Navbar -->
     <nav  id="navbar" class="justify-between 2xl:text-xl items-center fixed bg-main-color bg-opacity-80 w-full h-24 ease-linear duration-500 z-40 px-16 p-2 hidden lg:flex text-shadow shadow-gray-500">
         <a href="#header"><img src="img/logo.png" alt="logo" class="h-[75px] rounded-md hover:transform hover:scale-110 transition duration-500"></a>     
-        <ul class="main-font text-4xl md:flex gap-3 2xl:gap-5 md:visible hidden p-2 text-white text-shadow shadow-black">
-            <li class="hover:third-color">
+        <ul class="main-font text-4xl md:flex gap-3 2xl:gap-5 md:visible hidden p-2 text-white">
+            <li class="hover:text-gray-300">
               <a href="#quienessomos">
                 Quienes Somos
               </a>
             </li>
-            <li class="hover:third-color">
+            <li class="hover:text-gray-300">
               <a href="#divisiones">
                 Divisiones
               </a>
             </li>
-            <li class="hover:third-color">
+            <li class="hover:text-gray-300">
               <a href="#servicios">
                 Servicios
               </a>
             </li>
-            <li class="hover:third-color">
+            <li class="hover:text-gray-300">
               <a href="#habilitaciones">
                 Habilitaciones
               </a>
             </li>
-            <li class="hover:third-color">
+            <li class="hover:text-gray-300">
               <a href="#contacto">
                 Contacto
               </a>
             </li>
         </ul>
     </nav>
+    <a href="https://wa.me/541159077050" target="_blank"  id="whatsapp-icon" class="fixed bottom-5 right-5 p-2 md:p-3 md:bottom-11 md:right-11 h-11 w-11 md:h-16 md:w-16 cursor-pointer bg-main-color text-white text-base md:text-lg rounded-full flex items-center shadow-gray-500 shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 z-40 hover:transform hover:scale-125 transition duration-500">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-14 w-14"
+        fill="currentColor"
+        viewBox="0 0 24 24">
+        <path
+          d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+      </svg>
+    </a>
+    <!-- Header -->
+    <header>
+        <section id="header" class="min-h-screen flex relative text-shadow shadow-gray-500">
+          <!-- Background -->
+          <img id="background-image" class="absolute w-full h-full -z-40 object-cover md:object-fill object-center transition-opacity duration-1000" src="img/diatom.png" >
+          <!-- Overlay -->
+          <div class="absolute w-full h-full -z-10 bg-black bg-opacity-10"></div>
+
+          <!-- Grid system -->
+          <div class="flex flex-col w-2/5">
+            <div class="flex h-1/4"></div>
+            <div class="flex h-1/3 pl-32">
+                <div class="max-w-6xl flex flex-col gap-5 justify-center items-center">
+                    <h1 class="main-font text-8xl text-white text-center text-shadow shadow-black" >DIATOM</h1>
+                    <p class="text-2xl xl:text-3xl 2xl:text-4xl text-white font-semibold text-center">
+                      Control de Plagas y Limpieza de Tanques de Agua
+                    </p>
+                    <button class="bg-main-color text-white font-bold py-2 px-4 rounded text-xl shadow-md shadow-black hover:transform hover:scale-125 transition duration-500"><a href="#contacto">Contactar</a></button>                      
+                </div>
+            </div>
+            <div class="flex h-"></div>
+            <div class="flex h-1/4"></div>
+          </div>
+          <div class="flex flex-col w-1/3"></div>
+          <div class="flex flex-col w-1/3"></div>        
+        </section>
+    </header>
+    <!-- Main -->
+    <main>
+        <section id="quienessomos" class="w-full flex justify-center items-center py-24 relative bg-[url('img/quienessomos.png')] bg-cover bg-center bg-no-repeat h-[577px]">
+            <div class="text-black text-2xl md:text-3xl flex flex-col gap-4 p-8 items-center w-2/5 z-20 ease-linear" data-aos="fade-down" data-aos-duration="2000">        
+              <h4 class="main-font main-color text-6xl">
+                ¿Quiénes somos?
+              </h4>
+              <p class="font-semibold text-lg xl:text-xl 2xl:text-2xl text-center">
+                Somos una <span class="main-color">empresa</span> habilitada para realizar trabajos de <span class="main-color">control de plagas urbanas</span> y servicios de <span class="main-color">limpieza y desinfección de tanques de agua</span> potable. 
+                Atendemos a consorcios, municipalidades, hoteles, geriátricos, colegios, hospitales, fábricas y todo tipo de establecimientos. <span class="main-color">Entregamos certificados</span>.
+              </p>
+            </div>
+        </section>
+        <section id="divisiones" class="w-full flex flex-col items-center justify-around py-24 relative bg-secondary-white min-h-screen">       
+            <h4 class="main-font secondary-color text-6xl">
+              Divisiones
+            </h4>
+            <div class="flex w-3/5">
+              <!-- División Fumigación -->
+              <div class="bg-main-color text-white p-4 h-72 w-1/2 flex flex-col justify-center items-center gap-1 relative">
+                <img src="img/fumigacion.png" class="absolute -bottom-full left-1/2 transform -translate-x-1/2" alt="Limpieza de tanques">
+                <h2 class="main-font text-4xl">DIVISIÓN FUMIGACIÓN</h2>
+                <p class="secondary-font font-semibold text-xl">
+                  Somos una empresa habilitada en el ámbito de la Ciudad de Buenos Aires (APRA), y Provincia de Buenos Aires (Secretaría de Agricultura, Ganadería y Pesca) para realizar trabajos de control de plagas
+                  urbanas, desinsectación, desratización, desinfección, con tratamientos profesionales, con resultados eficientes.
+                  Los productos que utilizamos están habilitados por el ANMAT-INAL
+                </p>
+              </div>
+            
+              <!-- División Limpieza de Tanques de Agua -->
+              <div class="flex flex-col w-1/2">
+                <div class="h-36"></div>
+                <div class="bg-secondary-color h-72 text-white p-4 flex flex-col justify-center items-center gap-1 relative">
+                  <img src="img/tanques.png" class="absolute -top-full left-1/2 transform -translate-x-1/2" alt="Limpieza de tanques">
+                  <h2 class="main-font text-4xl">DIVISIÓN LIMPIEZA DE TANQUES DE AGUA</h2>
+                  <p class="secondary-font font-semibold text-xl">
+                    Realizamos servicios de limpieza y desinfección de tanques de agua potable, análisis bacteriológicos y fisicoquímicos. 
+                    Presentamos informes donde se detallan las posibles reparaciones, cambios de marcos y tapas, para el excelente funcionamiento de las instalaciones.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="servicios" class="w-full flex flex-col items-center justify-around py-24 relative bg-white gap-20">       
+          <h4 class="main-font third-color text-6xl">
+            Nuestros Servicios
+          </h4>
+          <div class="flex w-4/6 gap-10 h-[400px]">
+            <!-- División Fumigación -->
+            <div class="bg-secondary-white text-black flex-1 flex flex-col justify-center items-center shadow-lg shadow-gray-500 relative">
+              <img src="img/smoke-left.png" class="absolute -left-32 top-0 w-32" alt="humo">
+              <img src="img/servicios-fumigacion.png" class="w-full h-2/5 bg-cover"></img>
+              <ul class="bg-secondary-white w-full h-3/5 main-font  md:text-2xl 2xl:text-3xl flex flex-col justify-center p-5 gap-1">
+                <li><span class="third-color">Control</span> de Plagas Urbanas</li>
+                <li><span class="main-color">Desinfección</span></li>
+                <li><span class="third-color">Desratización</span></li>
+                <li><span class="main-color">Desinsectación</span></li>
+              </ul>
+            </div>
+          
+            <!-- División Fumigación -->
+            <div class="bg-secondary-white text-black flex-1 flex flex-col justify-center items-center relative shadow-lg shadow-gray-500">
+              <img src="img/water-right.png" class="absolute -right-32 top-0 w-32" alt="humo">
+              <img src="img/water-bottom.png" class="absolute -bottom-32 w-3/4 h-32" alt="Limpieza de tanques">
+              <img src="img/servicios-tanques.png" class="w-full h-2/5 bg-cover"></img>
+              <ul class="bg-secondary-white w-full h-3/5 main-font md:text-2xl 2xl:text-3xl flex flex-col justify-center p-5 gap-1">
+                <li><span class="third-color">limpieza</span> de tanques de agua potable</li>
+                <li><span class="main-color">desinfección</span> de tanques de agua potable</li>
+                <li><span class="third-color">Análisis</span> bacteriológicos</li>
+                <li><span class="main-color">Análisis</span> fisicoquímicos</li>
+                <li><span class="third-color">informes</span></li>
+              </ul>
+            </div>
+        </section>
+        <section id="habilitaciones" class="w-full flex flex-col items-center justify-around relative bg-secondary-white gap-20">       
+          <div class="flex w-11/12">
+            <div class="w-3/5 flex flex-col gap-5 justify-center items-center">
+              <h4 class="main-font secondary-color text-6xl">
+                Habilitaciones
+              </h4>
+              <ul class="secondary-font font-semibold text-2xl flex flex-col gap-5 w-3/4">
+                <li>
+                Nuestra empresa está habilitada para brindar servicios de control de plagas urbanas por el gobierno de la <span class="secondary-color">Ciudad de Buenos Aires</span>: en la Dirección General de Control Ambiental.
+                </li>
+                <li>
+                En <span class="secondary-color">provincia de Buenos Aires</span> estamos habilitados por el Ministerio de Asuntos Agrarios.
+                </li>
+                <li>
+                Todos los servicios cuentan con el correspondiente certificado exigido por el GCBA, según Ordenanza Municipal N° 36352/80.
+                </li>
+                <li>
+                Trabajamos y <span class="secondary-color">entregamos certificaciones</span> bajo la Ordenanza Municipal N°45.593/95.
+                </li>
+              </ul>
+            </div>
+            <div class="w-2/5 relative">
+              <img src="img/carnet.png" alt="habilitaciones" class="top-0 left-0">
+            </div>
+          </div>
+        </section>
+        <section id="galeria" class="w-full flex flex-col items-center justify-around relative bg-secondary-white">       
+          <!-- Carrousel -->
+          <div class="images glide relative">
+            <!-- Carrousel Track -->
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                    <img src="img/gallery/diatom1.png" alt="">
+                </li>
+                <li class="glide__slide">
+                  <img src="img/gallery/diatom3.png" alt="">
+                </li>
+                <li class="glide__slide">
+                    <img src="img/gallery/diatom2.png" alt="">
+                </li>
+              </ul>
+            </div>
+            <!-- Carrousel Arrows -->
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left w-10 text-lg lg:w-20 lg:text-5xl absolute left-3 top-1/2 secondary-white-color hover:transform hover:scale-125 transition duration-500" data-glide-dir="<">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="glide__arrow glide__arrow--right w-10 text-lg lg:w-20 lg:text-5xl absolute right-3 top-1/2 secondary-white-color hover:transform hover:scale-125 transition duration-500" data-glide-dir=">">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+        </section>
+        <section id="contacto" class="w-full flex flex-col items-center justify-around relative bg-white"> 
+          <ul class="py-14 w-1/4 flex flex-col text-center justify-center main-font text-4xl gap-10">
+            <li class="flex flex-col justify-center items-center gap-2">
+              <img src="img/ubicacion.png">
+              <h5 class="secondary-color">Ubicación</h5>
+              <p>Sargento Díaz 2340</p>
+              <p>Virreyes, Buenos aires</p>
+            </li>
+            <li class="flex flex-col justify-center items-center gap-2"> 
+              <img src="img/contacto.png">
+              <h5 class="main-color">Contacto</h5>
+              <p>1559077050</p>
+              <p>@fumigacionesdiatom</p>
+            </li>
+          </ul>
+        </section>
+        <section id="contact-form" class="bg-transparent flex items-center justify-center relative w-full md:py-8">
+          <img class="absolute w-full h-full -z-50 object-cover object-center" src="img/form.jpg" >
+          <div class="absolute w-full h-full -z-20 bg-black opacity-30"></div>
+
+          <form id="form" action="" class="w-full md:w-3/4 lg:w-1/2 2xl:w-2/5 px-8 flex flex-col font-bold text-base gap-5 bg-secondary-white py-11 md:py-14 md:px-28 shadow-black shadow-lg relative rounded-md">
+            <div class="flex justify-center text-center">
+              <h4 class="main-font text-xl md:text-2xl xl:text-7xl font-normal">Diatom</h4>
+            </div>
+            <div class="flex flex-col">
+              <label for="from_name">
+                Nombre
+              </label>
+              <input data-language="spanish" name="from_name" id="from_name" type="text" class="shadow-gray-500 shadow-md rounded-lg p-2 text-base" placeholder="Nombre y Apellido">
+            </div>
+            <div class="flex flex-col">
+              <label for="phone_number">
+                Télefono
+              </label>
+              <input name="phone_number" id="phone_number" type="text" class="shadow-gray-500 shadow-md rounded-lg p-2 text-base" placeholder="1122334455">
+            </div>
+            <div class="flex flex-col">
+              <label for="email_id">
+                Email
+              </label>
+              <input data-language="spanish" name="email_id" id="email_id" type="text" class="shadow-gray-500 shadow-md rounded-lg p-2 text-base" placeholder="tuemail@gmail.com">
+            </div>
+            <div class="flex flex-col">
+              <label for="message">
+                Mensaje
+              </label>
+              <textarea name="message" id="message" cols="30" rows="10" class="shadow-gray-500 shadow-md rounded-lg p-1 text-base" placeholder="Hola, estoy interesado en conocer más sobre sus servicios"></textarea>
+            </div>
+            <button id="button" class="bg-main-color w-2/3 text-white p-2 m-auto text-lg rounded-[18px] px-6 flex items-center gap-2 shadow-gray-500 shadow-md hover:bg-secondary-color focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+              <span class="text-center m-auto">
+                <span data-language="spanish">Enviar</span>
+              </span>
+            </button>
+          </form>
+          <div id="sent-message" class="absolute w-48 h-auto bg-white left-0 right-0 mr-auto ml-auto p-2 flex-col justify-center items-center gap-3 rounded-md shadow-lg shadow-black border-[1px] border-gray-200 font-extralight text-xl transition duration-500 ease-linear hidden opacity-0">
+              <p>
+                <span data-language="spanish">Mensaje enviado!</span>
+                <span data-language="english" class="hidden">Message sent!</span>
+              </p>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-green-700">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+              </svg>            
+          </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-main-color flex flex-col md:flex-row md:items-start justify-around p-8 text-white gap-7 md:gap-0">
+      <div class="flex flex-col items-center text-lg">
+        <p>+1559077050</p>
+        <p>
+          @fumigacionesdiatom
+        </p>
+      </div>
+      <div class="flex flex-col items-center md:justify-center">
+        <p class="text-center main-font text-5xl">DIATOM</p>
+      </div>
+      <div class="flex flex-col items-center text-lg">
+        <p>Sargento Díaz 2340</p>
+        <p>Virreyes, Buenos Aires</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="script.js"></script>
 </body>
 </html>
