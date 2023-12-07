@@ -6,14 +6,15 @@
     <title>Diatom</title>
     <link rel="stylesheet" href="output.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
 </head>
 <body>
     <!-- Navbar -->
-    <nav  id="navbar" class="justify-between 2xl:text-xl items-center fixed bg-main-color bg-opacity-80 w-full h-24 ease-linear duration-500 z-40 px-16 p-2 hidden lg:flex text-shadow shadow-gray-500">
-        <a href="#header"><img src="img/logo.png" alt="logo" class="h-[75px] rounded-md hover:transform hover:scale-110 transition duration-500"></a>     
-        <ul class="main-font text-4xl md:flex gap-3 2xl:gap-5 md:visible hidden p-2 text-white">
+    <nav  id="navbar" class="justify-between 2xl:text-xl items-center fixed bg-main-color bg-opacity-80 w-full ease-linear duration-500 z-40 px-16 p-2 hidden lg:flex text-shadow shadow-gray-500">
+        <a href="#header"><img id="navlogo" src="img/logo.png" alt="logo" class="h-[75px] rounded-md hover:transform hover:scale-110 transition duration-500"></a>     
+        <ul class="main-font text-4xl md:flex gap-3 2xl:gap-5 md:visible hidden p-1 text-white">
             <li class="hover:text-gray-300">
               <a href="#quienessomos">
                 Quienes Somos
@@ -92,12 +93,12 @@
             </div>
         </section>
         <section id="divisiones" class="w-full flex flex-col items-center justify-around py-24 relative bg-secondary-white min-h-screen">       
-            <h4 class="main-font secondary-color text-6xl">
+            <h4 class="main-font secondary-color text-6xl" data-aos="fade-in">
               Divisiones
             </h4>
             <div class="flex w-3/5">
               <!-- División Fumigación -->
-              <div class="bg-main-color text-white p-4 h-72 w-1/2 flex flex-col justify-center items-center gap-1 relative">
+              <div class="bg-main-color text-white p-4 h-72 w-1/2 flex flex-col justify-center items-center gap-1 relative" data-aos="fade-right" data-aos-duration="2000">
                 <img src="img/fumigacion.png" class="absolute -bottom-full left-1/2 transform -translate-x-1/2" alt="Limpieza de tanques">
                 <h2 class="main-font text-4xl">DIVISIÓN FUMIGACIÓN</h2>
                 <p class="secondary-font font-semibold text-xl">
@@ -108,7 +109,7 @@
               </div>
             
               <!-- División Limpieza de Tanques de Agua -->
-              <div class="flex flex-col w-1/2">
+              <div class="flex flex-col w-1/2" data-aos="fade-left" data-aos-duration="2000">
                 <div class="h-36"></div>
                 <div class="bg-secondary-color h-72 text-white p-4 flex flex-col justify-center items-center gap-1 relative">
                   <img src="img/tanques.png" class="absolute -top-full left-1/2 transform -translate-x-1/2" alt="Limpieza de tanques">
@@ -127,7 +128,7 @@
           </h4>
           <div class="flex w-4/6 gap-10 h-[400px]">
             <!-- División Fumigación -->
-            <div class="bg-secondary-white text-black flex-1 flex flex-col justify-center items-center shadow-lg shadow-gray-500 relative">
+            <div class="bg-secondary-white text-black flex-1 flex flex-col justify-center items-center shadow-lg shadow-gray-500 relative" data-aos="fade-up" data-aos-duration="2000">
               <img src="img/smoke-left.png" class="absolute -left-32 top-0 w-32" alt="humo">
               <img src="img/servicios-fumigacion.png" class="w-full h-2/5 bg-cover"></img>
               <ul class="bg-secondary-white w-full h-3/5 main-font  md:text-2xl 2xl:text-3xl flex flex-col justify-center p-5 gap-1">
@@ -139,7 +140,7 @@
             </div>
           
             <!-- División Fumigación -->
-            <div class="bg-secondary-white text-black flex-1 flex flex-col justify-center items-center relative shadow-lg shadow-gray-500">
+            <div class="bg-secondary-white text-black flex-1 flex flex-col justify-center items-center relative shadow-lg shadow-gray-500" data-aos="fade-up" data-aos-duration="2000">
               <img src="img/water-right.png" class="absolute -right-32 top-0 w-32" alt="humo">
               <img src="img/water-bottom.png" class="absolute -bottom-32 w-3/4 h-32" alt="Limpieza de tanques">
               <img src="img/servicios-tanques.png" class="w-full h-2/5 bg-cover"></img>
@@ -154,7 +155,7 @@
         </section>
         <section id="habilitaciones" class="w-full flex flex-col items-center justify-around relative bg-secondary-white gap-20">       
           <div class="flex w-11/12">
-            <div class="w-3/5 flex flex-col gap-5 justify-center items-center">
+            <div class="w-3/5 flex flex-col gap-5 justify-center items-center" data-aos="fade-in" data-aos-duration="2000">
               <h4 class="main-font secondary-color text-6xl">
                 Habilitaciones
               </h4>
@@ -173,7 +174,7 @@
                 </li>
               </ul>
             </div>
-            <div class="w-2/5 relative">
+            <div class="w-2/5 relative" data-aos="fade-down" data-aos-duration="2000">
               <img src="img/carnet.png" alt="habilitaciones" class="top-0 left-0">
             </div>
           </div>
@@ -207,7 +208,7 @@
         </div>
         </section>
         <section id="contacto" class="w-full flex flex-col items-center justify-around relative bg-white"> 
-          <ul class="py-14 w-1/4 flex flex-col text-center justify-center main-font text-4xl gap-10">
+          <ul class="py-14 w-1/4 flex flex-col text-center justify-center main-font text-4xl gap-10" data-aos="fade-in" data-aos-duration="2000">
             <li class="flex flex-col justify-center items-center gap-2">
               <img src="img/ubicacion.png">
               <h5 class="secondary-color">Ubicación</h5>
@@ -289,6 +290,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
