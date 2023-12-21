@@ -118,3 +118,131 @@ drawerItems.forEach((item) => {
   })
 });
 //#endregion
+
+//#region Modals
+const bodySection = document.getElementById('body');
+const bodyBackdrop = document.getElementById('body-backdrop');
+const modalsSection = document.getElementById('modals');
+const serviciosSection = document.getElementById('servicios');
+
+const showCurrentModal = (currentModal) => {
+  bodySection.classList.add('hidden');
+  modalsSection.classList.add('flex');
+  modalsSection.classList.remove('hidden');
+
+  bodyBackdrop.classList.remove('hidden');
+  currentModal.classList.remove('hidden');
+  currentModal.classList.add('flex');
+
+  window.setTimeout(() => {
+    currentModal.classList.remove('opacity-0');
+    bodyBackdrop.classList.remove('opacity-0');
+  }, 1);
+}
+const closeCurrentModal = (currentModal, target) => {
+  currentModal.classList.add('opacity-0');
+  bodyBackdrop.classList.add('opacity-0');
+  
+  window.setTimeout(() => {
+    bodyBackdrop.classList.add('hidden');
+    currentModal.classList.add('hidden');
+  }, 500);
+
+  bodySection.classList.remove('hidden');
+  modalsSection.classList.add('hidden');
+  modalsSection.classList.remove('flex');
+
+  if (target) {
+    let targetPos = target.getBoundingClientRect().top + window.pageYOffset;
+    window.scrollTo({
+      top: targetPos,
+      behavior: 'auto'
+    });
+  }
+}
+
+//#region Mosquitos
+const mosquitosModal = document.getElementById('mosquitos-modal');
+const closeMosquitosModal = document.getElementById('close-mosquitos-modal');
+const mosquitosButton = document.querySelector('.mosquitos-button');
+
+mosquitosButton.addEventListener('click', () => {
+  showCurrentModal(mosquitosModal);
+});
+
+closeMosquitosModal.addEventListener('click', () => {
+    closeCurrentModal(mosquitosModal, serviciosSection); 
+});
+//#endregion
+
+//#region Desratizacion
+const desratizacionModal = document.getElementById('desratizacion-modal');
+const closeDesratizacionModal = document.getElementById('close-desratizacion-modal');
+const desratizacionButton = document.querySelector('.desratizacion-button');
+
+desratizacionButton.addEventListener('click', () => {
+  showCurrentModal(desratizacionModal);
+});
+
+closeDesratizacionModal.addEventListener('click', () => {
+    closeCurrentModal(desratizacionModal, serviciosSection); 
+});
+//#endregion
+
+//#region Hormigas
+const hormigasModal = document.getElementById('hormigas-modal');
+const closeHormigasModal = document.getElementById('close-hormigas-modal');
+const hormigasButton = document.querySelector('.hormigas-button');
+
+hormigasButton.addEventListener('click', () => {
+  showCurrentModal(hormigasModal);
+});
+
+closeHormigasModal.addEventListener('click', () => {
+    closeCurrentModal(hormigasModal, serviciosSection); 
+});
+//#endregion
+
+//#region Murcielagos
+const murcielagosModal = document.getElementById('murcielagos-modal');
+const closeMurcielagosModal = document.getElementById('close-murcielagos-modal');
+const murcielagosButton = document.querySelector('.murcielagos-button');
+
+murcielagosButton.addEventListener('click', () => {
+  showCurrentModal(murcielagosModal);
+});
+
+closeMurcielagosModal.addEventListener('click', () => {
+    closeCurrentModal(murcielagosModal, serviciosSection); 
+});
+//#endregion
+
+//#region Grillo Topo
+const grillotopoModal = document.getElementById('grillotopo-modal');
+const closeGrillotopoModal = document.getElementById('close-grillotopo-modal');
+const grillotopoButton = document.querySelector('.grillotopo-button');
+
+grillotopoButton.addEventListener('click', () => {
+  showCurrentModal(grillotopoModal);
+});
+
+closeGrillotopoModal.addEventListener('click', () => {
+    closeCurrentModal(grillotopoModal, serviciosSection); 
+});
+//#endregion
+
+//#region Cucaracha Germanica
+const cucarachagermanicaModal = document.getElementById('cucarachagermanica-modal');
+const closeCucarachagermanicaModal = document.getElementById('close-cucarachagermanica-modal');
+const cucarachagermanicaButton = document.querySelector('.cucarachagermanica-button');
+
+cucarachagermanicaButton.addEventListener('click', () => {
+  showCurrentModal(cucarachagermanicaModal);
+});
+
+closeCucarachagermanicaModal.addEventListener('click', () => {
+    closeCurrentModal(cucarachagermanicaModal, serviciosSection); 
+});
+//#endregion
+
+//#endregion

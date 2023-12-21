@@ -11,6 +11,167 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
 </head>
 <body>
+  <div id="body-backdrop" class="z-50 bg-black absolute top-0 w-full height100 bg-opacity-80 hidden opacity-0 ease-linear duration-300" ></div>
+  <div id="modals" class="bg-black bg-opacity-50 min-h-screen h-auto py-12 hidden justify-center items-start relative">
+    <div class="absolute top-0 h-auto w-full z-10 flex flex-col bg-opacity-30">
+      <img src="img/modals/servicios.png" alt="" class="hidden xl:block">
+    </div>
+    <!--#region Modals  -->
+    <!--Mosquitos Modal -->
+    <div id="mosquitos-modal" class="bg-slate-50 w-11/12 md:w-3/4 h-auto xl:h-11/12 z-50 flex-col p-4 md:p-8 rounded-md shadow-md shadow-black hidden opacity-0 ease-linear duration-500 relative text-lg">
+      <!--Close Modal Icon-->    
+      <svg id="close-mosquitos-modal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black w-10 h-10 absolute top-2 right-2 cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <div class="flex flex-col lg:flex-row p-2 lg:p-8 gap-5">
+        <div class="flex flex-col justify-center items-center gap-4 lg:w-1/2">
+          <h4 class="main-font text-4xl">Dengue</h4>
+          <img src="img/servicios/mosquitos.jpg" class="w-52 h-52 border-white border-4 shadow-black shadow-md rounded-md" />
+          <p>
+            <span class="font-bold">¿Qué es el Dengue?</span> <br>
+            El dengue es una infección vírica transmitida por la picadura de las hembras infectadas de mosquitos del género Aedes.
+            <br><span class="font-bold">¿Cómo se transmite el Dengue?</span> <br>
+            Este virus se transmite a las personas a través de la picadura de mosquitos hembra infectadas. Las personas afectadas, sintomáticas y asintomáticas, son las portadoras y multiplicadoras principales de los virus, y los mosquitos se infectan al picarlas.
+            <br><span class="font-bold">¿Cuáles son los síntomas de esta enfermedad?</span> <br>
+            Los síntomas son: fiebre elevada (40C°) acompañada de dolor de cabeza muy intenso, dolor detrás de los globos oculares, dolores musculares y articulares, náuseas, vómitos y agrandamiento de ganglios linfáticos o sarpullido. Dos o más de estos síntomas aparecen entre 3 y 14 días (promedio de 4 -7 días) después de la picadura infectiva.
+          </p>
+        </div>
+        <div class="flex flex-col items-center gap-4 lg:w-1/2">
+          <h4 class="main-font text-4xl">Importancia de fumigar</h4>
+          <img src="img/servicios/mosquitos2.jpg" class="w-52 h-52 border-white border-4 shadow-black shadow-md rounded-md" />
+          <p>
+            Está demostrado que una campaña metódica e integral de
+            fumigación por nebulización puede reducir la población de mosquitos y así también las probabilidades de que se disparen los contagios del virus.
+            En DIATOM contamos con un equipo de profesionales, capacitados especialmente en el uso de maquinaria de alta tecnología, para el combate del mosquito en todos sus estadios, esto y nuestra vasta experiencia en grandes espacios abiertos urbanos, hace que estemos en la vanguardia de la lucha contra el mosquito.
+         </p>
+        </div>
+      </div>
+    </div>
+    <!--Desratizacion Modal -->
+    <div id="desratizacion-modal" class="bg-slate-50 w-11/12 md:w-3/4 h-auto xl:h-11/12 z-50 flex-col p-4 md:p-8 rounded-md shadow-md shadow-black hidden opacity-0 ease-linear duration-500 relative text-lg">
+      <!--Close Modal Icon-->    
+      <svg id="close-desratizacion-modal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black w-10 h-10 absolute top-2 right-2 cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <div class="flex flex-col lg:flex-row p-2 lg:p-8 gap-5">
+        <div class="flex flex-col justify-center items-center gap-4">
+          <h4 class="main-font text-4xl">Estaciones de Cebo</h4>
+          <img src="img/servicios/cebadora.jpg" class="w-52 h-52 border-white border-4 shadow-black shadow-md rounded-md" />
+          <p>
+          <span class="third-color font-bold">Las estaciones externas de cebo</span> que contengan rodenticidas <span class="third-color font-bold">estarán fijadas</span> con amarres plásticos descartables, con candados o bien con dispositivos previstos por el fabricante como, por ejemplo, sistemas de llaves.
+          Las estaciones externas de cebo <span class="third-color font-bold">serán resistentes a la manipulación</span> y ubicadas, ancladas en su lugar y cerradas con llave e identificadas con etiquetas.
+          Los cebos se fijarán dentro de las estaciones de cebo, se conservarán en buen estado y se reemplazarán según sea necesario, en base a las instrucciones en la etiqueta o a las recomendaciones del fabricante, para evitar su deterioro.”
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-4">
+          <h4 class="main-font text-4xl">Cebo (rodenticida) anticoagulante</h4>
+          <img src="img/servicios/cebos.jpg" class="w-52 h-52 border-white border-4 shadow-black shadow-md rounded-md" />
+          <p>
+            <span class="third-color font-bold">Los rodenticidas anticoagulantes</span> son compuestos que actúan sobre la dinámica del tejido sanguíneo del roedor, impidiendo su normal coagulación y generalmente provocando la muerte del animal por shock hemorrágico entre las 48 y 96 horas posteriores a la ingesta de una dosis letal.
+          Se ha observado que una rata enferma o de mayor edad, al consumir los cebos anticoagulantes, podría morir sin completar el tiempo requerido para la deshidratación por hemorragia; eso implica que, al no deshidratarse, su cuerpo entrará en descomposición.
+          El Ingrediente Activo se combina con excipientes atractivos (palatabilidad) a los roedores; pueden compactarse por presión o por medio de parafina. Los bloques deben ser perforados para sujetarlos adentro de las Estaciones de Cebo.
+         </p>
+        </div>
+      </div>
+    </div>
+    <!--Homigas Modal -->
+    <div id="hormigas-modal" class="bg-slate-50 w-11/12 md:w-3/4 h-auto xl:h-11/12 z-50 flex-col p-4 md:p-8 rounded-md shadow-md shadow-black hidden opacity-0 ease-linear duration-500 relative text-lg">
+      <!--Close Modal Icon-->    
+      <svg id="close-hormigas-modal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black w-10 h-10 absolute top-2 right-2 cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <div class="flex flex-col lg:flex-row p-2 lg:p-8 gap-5">
+        <div class="flex flex-col items-center gap-4 lg:w-1/3">
+          <h4 class="main-font text-4xl">¿Cuáles son sus Hábitos?</h4>
+          <img src="img/servicios/hormiga.jpg" class="w-52 h-52 border-white border-4 shadow-black shadow-md rounded-md" />
+          <p>
+            Las <span class="fourth-color font-bold">hormigas</span> se caracterizan por ser <span class="fourth-color font-bold">insectos sociales</span>, esto significa que hay grupos de hormigas que se ocupan de realizar ciertas tareas. Las que solemos ver habitualmente, son las hormigas forrajeras u obreras, que son las encargadas de proveer alimento a la colonia…pero ¡hay muchas más!. "Por cada hormiga visible, hay más de mil que no se ven"
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-4 lg:w-2/3">
+          <h4 class="main-font text-4xl">¿Cuál es el tratamiento más efectivo?</h4>
+          <img src="img/servicios/hormigas.jpg" class="w-52 h-52 border-white border-4 shadow-black shadow-md rounded-md" />
+          <p>
+            Hay dos maneras de eliminarlas: una con resultados parciales (sobre lo que se ve) y otra definitivamente (eliminación total).
+            La utilización de un producto incorrecto podría aumentar no solo su presencia sino también su resistencia. Cualquier producto insecticida (spray, polvo, cebo, pellets, trampas pegajosas), pueden eliminar a las hormigas forrajeras, no solucionando el problema de fondo, lo cual genera que al poco tiempo reaparezcan. La clave es llegar a la <span class="fourth-color font-bold">Reina</span> y sus <span class="fourth-color font-bold">larvas</span>, que se encuentra en el interior del nido. Las obreras abandonan el nido en busca de alimento. Cuando lo encuentran, lo guardan en el buche y regresan a la colonia. Una vez allí, regurgitan el alimento y lo comparten con las larvas pasándolo de boca a boca. Así se inicia una cadena de alimentación que llega hasta la reina. En el caso de las hormigas cortadoras, tienen un comportamiento alimentario diferente, y por tanto un tratamiento distinto.
+            Las formulaciones en <span class="fourth-color font-bold">cebo en gel y en pellet</span> a base de sulfluramida, son muy efectivas para erradicar las especies más frecuentes (negras, rojas, carpinteras y cortadoras). Este tipo de formulaciones permite con una simple aplicación de puntos, llegar a todos los integrantes de la colonia (fenómeno conocido como “Efecto Dominó”).
+         </p>
+        </div>
+      </div>
+    </div>
+    <!--Murcielagos Modal -->
+    <div id="murcielagos-modal" class="bg-slate-50 w-11/12 md:w-3/4 h-auto xl:h-11/12 z-50 flex-col p-4 md:p-8 rounded-md shadow-md shadow-black hidden opacity-0 ease-linear duration-500 relative text-lg">
+      <!--Close Modal Icon-->    
+      <svg id="close-murcielagos-modal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black w-10 h-10 absolute top-2 right-2 cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <div class="flex p-8 gap-5">
+        <div class="flex flex-col items-center gap-4">
+          <h4 class="main-font text-4xl">Tratamiento por ultrasonido</h4>
+          <img src="img/servicios/murcielago.jpg" class="w-52 h-52 border-white border-4 shadow-black shadow-md rounded-md" />
+          <p>
+            <span class="main-color font-bold">Repelente ultrasónico electrónico de roedores y murciélagos (espantaplagas por ultrasonido)</span>. Evita el anidamiento y la reproducción de roedores y murciélagos dentro de las áreas tratadas. Complemento ideal para cualquier desratización. Auto regulable y con un mínimo consumo de corriente. No requiere mantenimiento. Para un área de 100 mts2 en control de ratas, ratones y otros roedores. En el caso de murciélagos se utiliza uno por lugar de anidamiento (tapa rollos, entre techos, etc) El bajo consumo del <span class="main-color font-bold">ultrasonido para roedores y murciélagos</span>, permite un uso permanente sin verse reflejado en la factura de luz. El resultado ha sido satisfactorio en más del 95% de los casos para este modelo, el único probado y recomendado por La Casa de los Insecticidas como <span class="main-color font-bold">repelente de roedores</span> efectivo. Esta empresa probó en diferentes situaciones más de 30 modelos de <span class="main-color font-bold">erradicadores por ultrasonido</span> de procedencia nacional e importada.
+            Durante nuestras pruebas de equipos <span class="main-color font-bold">ahuyentadores por Ultrasonido para plagas de roedores y murciélagos</span>, hemos detectado que distintos tipos de ratas y ratones comunes en el ámbito urbano, encontraban lugares a los que el ultrasonido no llegaba y por ende no trabajaba como ahuyentador. Estos lugares suelen tener una aislación acústica importante. Por eso para un uso efectivo de los <span class="main-color font-bold">Ultrasonidos para el control y erradicación de nidos de roedores</span> se recomienda ordenar el medio en el que se los va a utilizar. Las cajas apiladas, las telas, los canastos, las alfombras, etc. evitan la propagación de las ondas de ultrasonido y con esto se disminuye la efectividad del ahuyentador por ultrasonido.
+            En algunos casos es necesario colocar el <span class="main-color font-bold">ahuyentador ultrasónico</span> en el lugar de anidamiento o lo más cercano posible al mismo, ya que el ultrasonido no traspasa paredes ni tabiques de madera. Todos los materiales termoacústicos, como el telgopor o las fibras de lana mineral son aislantes de los <span class="main-color font-bold">ultrasonidos</span> y disminuyen el efecto de <span class="main-color font-bold">erradicación</span>.
+            <span class="main-color font-bold">Los equipos ultrasónicos para ratas y murciélagos</span> son el complemento ideal en tratamientos de control de plagas de roedores y murciélagos, así como el más efectivo método preventivo de estas plagas.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Grillo Topo Modal -->
+    <div id="grillotopo-modal" class="bg-slate-50 w-11/12 md:w-3/4 h-auto xl:h-11/12 z-50 flex-col p-4 md:p-8 rounded-md shadow-md shadow-black hidden opacity-0 ease-linear duration-500 relative text-lg">
+      <!--Close Modal Icon-->    
+      <svg id="close-grillotopo-modal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black w-10 h-10 absolute top-2 right-2 cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <div class="flex flex-col lg:flex-row p-2 lg:p-8 gap-5">
+        <div class="flex flex-col justify-center items-center gap-4">
+          <h4 class="main-font text-4xl">Grillos topo</h4>
+          <img src="img/servicios/grillotopo.jpg" class="w-52 h-52 border-white border-4 shadow-black shadow-md rounded-md" />
+          <p>
+            Son la plaga número uno del pasto y su intensidad crece año tras año en la Argentina. Con la primavera, se vuelven más activos. Si se toman medidas a tiempo, es posible minimizar sus daños.
+            Los grillos topos, la principal plaga del césped, son primos hermanos de los grillos comunes, pero a diferencia de ellos tienen hábito subterráneo. Las dos especies que más se encuentran en los jardines urbanos son el grillo topo del sur (Scapteriscus vicinus) y el más agresivo y voraz grillo topo gris (Scapteriscus acletus).
+            Tienen un ciclo de vida de un año. No se ven fácilmente, ya que pasan la mayor parte del tiempo debajo del suelo. El apareamiento de los grillos topo ocurre al final del invierno o al principio de la primavera, cuando las temperaturas del suelo y del aire aumentan. Estos insectos cavan túneles en el suelo a principios de la primavera, y perforan los primeros 20 a 40 cm (según la textura del suelo). El grillo topo gris se alimenta de las raíces y, en noches cálidas, sale a la superficie a alimentarse de brotes y hojas tiernas. El grillo topo del sur no es vegetariano, se alimenta de otros insectos, pero realiza gran cantidad de túneles que afectan la vegetación negativamente.
+          </p>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-4">
+          <h4 class="main-font text-4xl">Tratamiento</h4>
+          <img src="img/servicios/grillotopo2.jpg" class="w-52 h-52 border-white border-4 shadow-black shadow-md rounded-md" />
+          <p>
+            Para combatir y controlar esta plaga empleamos un tratamiento con aplicación en los meses de temperaturas altas e intermedias, utilizamos un producto granulado de comprobada eficacia en el mercado MAMBORETÁ y o CHIPCO CHOICE. Como alternativa para cubrir superficies no tan amplias, o cuando las lluvias prolongada no permiten el tratamiento con granulados, utilizamos productos líquidos como el HORMIX de HUAGRO.
+            El granulado MAMBORETÁ ronda los $45 dólares el kg y rinde aproximadamente 1000mts2 (3grxmt2) pero varía según la cantidad de cuevas de grillos topo.
+            El granulado CHIPCO CHOICE ronda los $40 dólares el kg y rinde aproximadamente 1000mts2 (3grxmt2) pero varía según la cantidad de cuevas de grillos topo.
+            El líquido ronda los 10 dólares el Litro, su rendimiento varía según la cantidad de hormigueros y o cuevas de grillos topo.
+         </p>
+        </div>
+      </div>
+    </div>
+    <!--Cucaracha Germanica Modal -->
+    <div id="cucarachagermanica-modal" class="bg-slate-50 w-11/12 md:w-3/4 h-auto xl:h-11/12 z-50 flex-col p-4 md:p-8 rounded-md shadow-md shadow-black hidden opacity-0 ease-linear duration-500 relative text-lg">
+      <!--Close Modal Icon-->    
+      <svg id="close-cucarachagermanica-modal" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-black w-10 h-10 absolute top-2 right-2 cursor-pointer">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <div class="flex p-8 gap-5">
+        <div class="flex flex-col items-center gap-4">
+          <h4 class="main-font text-4xl">Cucaracha Germánica</h4>
+          <img src="img/servicios/cucarachagermanica.jpg" class="w-52 h-52 border-white border-4 shadow-black shadow-md rounded-md" />
+          <p>
+            La cucaracha rubia o alemana es una especie de insecto blatodeo de la familia Blattellidae. Los ejemplares miden aproximadamente de 1,3 a 1,6 cm. Vive asociada a las viviendas humanas y es una plaga que se ha extendido por todos los continentes excepto en la Antártida
+            Estos animales representan un gran peligro para la salud, ya que transmiten microbios y virus patógenos, además de estar vinculadas al síndrome asmático de muchas personas.       
+            ¿Cuáles son las características de la cucaracha alemana?
+            La cucaracha alemana mide de 10 a 15 mm de longitud, su cuerpo está aplanado ventralmente, lo que le facilita refugiarse en grietas y huecos con facilidad. Su cuerpo está dividido en 3 tagmas o regiones, que son característicos de los insectos: cabeza, tórax y abdomen. Presentan dos pares de alas en el tórax, pero no les sirven para volar. Tienen 3 pares de patas, muy ágiles para correr y trepar en diversas superficies, aún en las lisas.
+            En cuanto a su alimentación, pueden desdoblar la celulosa de la materia vegetal por los microorganismos simbiontes en su sistema digestivo, pero por su adaptación evolutiva, son omnívoras, por lo cual cualquier desecho orgánico de tipo vegetal o animal sirve para su alimentación. Incluso existen el canibalismo, la coprofagia, la emetofagia y la necrofagia entre ellas, es decir las adultas llegan a comerse a las ninfas y las ninfas pequeñas se alimentan del excremento de las adultas o ninfas mayores y tanto adultas como ninfas se alimentan de los cadáveres de sus congéneres.
+            La cucaracha alemana es muy muy prolífica. La hembra de esta especie, dependiendo de la cantidad y calidad proteica en su alimentación, puede producir durante su vida 5 a 8 ootecas que son las cápsulas en las que maduran los huevos o embriones a su primer estadio ninfal.
+            Cada ooteca puede contener de 30 a 40 huevos (Koehler PG, Castner JL,1994), lo que explica su rápida propagación. Pueden existir de 6 a 7 estadios ninfales y estos se desarrollan más rápido en temperaturas entre 30° y 40°C, muy comunes en cocinas, áreas de la maquinaria en producción industrial y en las regiones cercanas a las costas.
+            La cucaracha alemana puede vivir de 3 a 6 meses en ambientes con un clima de 25ºC, se ha corroborado en laboratorio, pero los machos suelen ser menos longevos que las hembras.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--#endregion -->
+  </div>
+  <div id="body">
     <!-- Navbar -->
     <nav  id="navbar" class="justify-between 2xl:text-xl items-center fixed bg-main-color bg-opacity-80 w-full ease-linear duration-500 z-40 px-16 p-2 hidden lg:flex text-shadow shadow-gray-500">
         <a href="#header"><img id="navlogo" src="img/logo.png" alt="logo" class="h-[75px] rounded-md hover:transform hover:scale-110 transition duration-500"></a>     
@@ -192,10 +353,30 @@
               <img src="img/smoke-left.png" class="absolute md:-left-32 top-0 md:w-32 w-8 -left-8 h-full" alt="humo">
               <img src="img/servicios-fumigacion.png" class="w-full h-2/5 bg-cover"></img>
               <ul class="bg-secondary-white w-full h-3/5 main-font  text-2xl 2xl:text-3xl flex flex-col justify-center p-5 gap-1">
-                <li><span class="third-color">Control</span> de Plagas Urbanas</li>
-                <li><span class="main-color">Desinfección</span></li>
-                <li><span class="third-color">Desratización</span></li>
-                <li><span class="main-color">Desinsectación</span></li>
+                <li class="w-fit hover:transform hover:scale-125 trasition duration-500 flex items-center gap-2">
+                  <img src="img/icons/mosquito.png" class="w-8 h-8" />
+                  <a class="mosquitos-button cursor-pointer" href="#modals"><span class="secondary-color">Tratamiento Mosquitos</span></a>
+                </li>
+                <li class="w-fit hover:transform hover:scale-125 trasition duration-500 flex items-center gap-2">
+                  <img src="img/icons/ant.png" class="w-8 h-8" />
+                  <a class="hormigas-button cursor-pointer" href="#modals"><span class="fourth-color">Tratamiento Hormigas</span></a>
+                </li>
+                <li class="w-fit hover:transform hover:scale-125 trasition duration-500 flex items-center gap-2">
+                  <img src="img/icons/rata.png" class="w-8 h-8" />
+                  <a class="desratizacion-button cursor-pointer" href="#modals"><span class="third-color">Desratización</span></a>
+                </li>
+                <li class="w-fit hover:transform hover:scale-125 trasition duration-500 flex items-center gap-2">
+                  <img src="img/icons/murcielago.png" class="w-8 h-8" />
+                  <a class="murcielagos-button cursor-pointer" href="#modals"><span class="main-color">Tratamiento Murciélagos</span></a>
+                </li>
+                <li class="w-fit hover:transform hover:scale-125 trasition duration-500 flex items-center gap-2">
+                  <img src="img/icons/grillo.png" class="w-8 h-8" />
+                  <a class="grillotopo-button cursor-pointer" href="#modals"><span class="third-color">Tratamiento Grillo Topo</span></a>
+                </li>
+                <li class="w-fit hover:transform hover:scale-125 trasition duration-500 flex items-center gap-2">
+                  <img src="img/icons/cucaracha.png" class="w-8 h-8" />
+                  <a class="cucarachagermanica-button cursor-pointer" href="#modals"><span class="fourth-color">Tratamiento Cucaracha Germánica</span></a>
+                </li>
               </ul>
             </div>
           
@@ -297,15 +478,16 @@
                 <p>@fumigacionesdiatom</p>
               </a>
             </li>
-          </ul>
+          </ul>  
         </section>
         <section id="contact-form" class="bg-transparent flex items-center justify-center relative w-full md:py-8">
           <img class="absolute w-full h-full -z-50 object-cover object-center" src="img/form.jpg" >
           <div class="absolute w-full h-full -z-20 bg-black opacity-30"></div>
 
           <form id="form" action="" class="w-full md:w-3/4 lg:w-1/2 2xl:w-2/5 px-8 flex flex-col font-bold text-base gap-5 bg-secondary-white py-11 md:py-14 md:px-28 md:shadow-black md:shadow-lg relative md:rounded-md">
-            <div class="flex justify-center text-center">
+            <div class="flex flex-col justify-center text-center gap-3">
               <h4 class="main-font text-4xl xl:text-7xl font-normal">Diatom</h4>
+              <p class="secondary-font text-2xl lg:text-3xl">Dejanos <span class="main-color">tu mensaje</span>!</p>
             </div>
             <div class="flex flex-col">
               <label for="from_name">
@@ -364,6 +546,7 @@
         <p>Virreyes, Buenos Aires</p>
       </div>
     </footer>
+  </div>
 
     <!-- #region Media Queries -->
     <!--
