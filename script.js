@@ -246,3 +246,38 @@ closeCucarachagermanicaModal.addEventListener('click', () => {
 //#endregion
 
 //#endregion
+
+//#region Form
+const sentMessage = document.getElementById('sent-message');
+const buttonSpan = document.querySelector('#button span span');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  buttonSpan.textContent = 'Enviando...';
+
+  const serviceID = 'default_service';
+  const templateID = 'template_jwxnql7';
+
+  emailjs.sendForm(serviceID, templateID, this)
+   .then(() => {
+     buttonSpan.textContent = 'Enviar';
+
+     sentMessage.classList.remove('hidden');
+     sentMessage.classList.add('flex');
+     setTimeout(() => {
+       sentMessage.classList.remove('opacity-0');
+       setTimeout(() => {
+         sentMessage.classList.add('opacity-0');
+         setTimeout(() => {
+           sentMessage.classList.add('hidden');
+           sentMessage.classList.remove('flex');
+         }, 300);
+       }, 1750);
+     }, 300);
+   }, (err) => {
+     buttonSpan.textContent = 'Enviar';
+     alert(JSON.stringify(err));
+   });
+});
